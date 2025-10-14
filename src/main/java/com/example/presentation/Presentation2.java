@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class Presentation2 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.getEnvironment().setActiveProfiles("prod");
+        context.getEnvironment().setActiveProfiles("dev");
         context.register(Presentation2.class);
         context.refresh();
 
