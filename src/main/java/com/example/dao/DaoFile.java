@@ -3,11 +3,11 @@ package com.example.dao;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Component("com/example/dao")
-@Profile("prod")
-public class DaoImpl implements IDao {
+@Component("daoFile")
+@Profile("file")
+public class DaoFile implements IDao {
     @Override
     public double getValue() {
-        return 100.0;
+        return 180.0;
     }
 }
